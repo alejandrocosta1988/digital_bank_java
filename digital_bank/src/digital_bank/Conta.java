@@ -2,17 +2,18 @@ package digital_bank;
 
 /** 
  * Implementa uma conta no banco. A classe conta é abstrata porque não é de interesse que ela seja instanciada. Apenas as classes filhas ContaCorrente e ContaPoupanca deverão ser instanciadas.
+ * Os atributos agencia, numeroDaConta e saldo possuem visibilidade protected. Dessa forma eles podem ser acessados a partir das classes filhas.
  * @author Alejandro Costa
  * @version 0.1 2022-02-22
  */
 public abstract class Conta {
 
 	/** Armazena o número da agência da Conta Corrente.*/
-	private int agencia;
+	protected int agencia;
 	/** Armazena o número da Conta Corrente.*/
-	private int numeroDaConta;
+	protected int numeroDaConta;
 	/** Armazena o saldo da Conta Corrente.*/
-	private double saldo;
+	protected double saldo;
 	
 	/** 
 	 * Retorna o número da agência.
