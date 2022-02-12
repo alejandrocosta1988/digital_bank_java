@@ -1,7 +1,5 @@
 package digital_bank;
 
-import static digital_bank.Conta.SEQUENCIAL;
-
 /** 
  * Implementa uma conta no banco. A classe conta é abstrata porque não é de interesse que ela seja instanciada. Apenas as classes filhas ContaCorrente e ContaPoupanca deverão ser instanciadas.
  * Os atributos agencia, numeroDaConta e saldo possuem visibilidade protected. Dessa forma eles podem ser acessados a partir das classes filhas.
