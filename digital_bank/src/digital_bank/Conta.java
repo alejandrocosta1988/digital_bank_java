@@ -24,7 +24,14 @@ public abstract class Conta {
 
 		this.agencia = AGENCIA_PADRAO;
 		this.numeroDaConta = SEQUENCIAL++;
-		
+	}
+	
+	public Conta(double valorDeDepositoInicial)
+	{
+
+		this.agencia = AGENCIA_PADRAO;
+		this.numeroDaConta = SEQUENCIAL++;
+		this.saldo = valorDeDepositoInicial;
 	}
 	
 	/** 

@@ -7,6 +7,16 @@ package digital_bank;
  * */
 public class ContaCorrente extends Conta {
 	
+	ContaCorrente()
+	{
+		super();
+	}
+	
+	ContaCorrente(double valorDeDepositoInicial)
+	{
+		super(valorDeDepositoInicial);
+	}
+	
 	/** 
 	 * Imprime o extrato da conta corrente.
 	 * @author Alejandro Costa

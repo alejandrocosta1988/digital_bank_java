@@ -7,5 +7,16 @@ package digital_bank;
  * */
 public class ContaPoupanca extends Conta {
 
+	/** 
+	 * Imprime o extrato da conta poupança.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	@Override
+	public void imprimirExtrato()
+	{
+		System.out.println("*** Extrato Conta Poupança ***");
+		super.imprimirInformacoesEmComum();
+	}
 	
 }
