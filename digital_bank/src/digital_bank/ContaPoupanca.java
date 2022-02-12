@@ -11,4 +11,6 @@ public class ContaPoupanca {
 	private int agencia;
 	/** Armazena o número da Conta Poupança.*/
 	private int numeroDaConta;
+	/** Armazena o saldo da Conta Poupança.*/
+	private double saldo;
 }

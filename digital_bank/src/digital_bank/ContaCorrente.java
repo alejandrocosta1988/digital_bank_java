@@ -11,4 +11,6 @@ public class ContaCorrente {
 	private int agencia;
 	/** Armazena o número da Conta Corrente.*/
 	private int numeroDaConta;
+	/** Armazena o saldo da Conta Corrente.*/
+	private double saldo;
 }
