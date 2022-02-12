@@ -5,7 +5,7 @@ package digital_bank;
  * @author Alejandro Costa
  * @version 0.1 2022-02-22
  * */
-public class ContaPoupanca {
+public class ContaPoupanca extends Conta {
 
 	
 }

@@ -5,7 +5,7 @@ package digital_bank;
  * @author Alejandro Costa
  * @version 0.1 2022-02-22
  * */
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
 
 	
 }
