@@ -47,8 +47,8 @@ public abstract class Conta {
 		return this.saldo;
 	}
 	
-	public void sacar() { }
-	public void depositar() { }
-	public void transferir() { }
+	public void sacar(double valor) { }
+	public void depositar(double valor) { }
+	public void transferir(double valor, Conta contaDeDestino) { }
 	
 }
