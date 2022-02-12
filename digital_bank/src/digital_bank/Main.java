@@ -14,6 +14,10 @@ public class Main {
 	    System.out.println();
 	    ccComDeposito.imprimirExtrato();
 	    
+	    System.out.println("Teste de transferência...");
+	    ccComDeposito.transferir(1200, poupanca);
+	    poupanca.imprimirExtrato();
+	    
 	}
 
 }
