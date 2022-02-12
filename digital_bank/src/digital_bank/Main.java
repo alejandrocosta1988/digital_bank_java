@@ -3,10 +3,13 @@ package digital_bank;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		Cliente umCliente = new Cliente();
+		umCliente.setNome("Alejandro Costa");
 	
-		Conta cc = new ContaCorrente();
-	    Conta poupanca = new ContaPoupanca();
-	    Conta ccComDeposito = new ContaCorrente(3500);
+		Conta cc = new ContaCorrente(umCliente);
+	    Conta poupanca = new ContaPoupanca(umCliente);
+	    Conta ccComDeposito = new ContaCorrente(umCliente, 3500);
         
 	    cc.imprimirExtrato();
 	    poupanca.imprimirExtrato();
