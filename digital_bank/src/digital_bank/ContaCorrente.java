@@ -7,4 +7,15 @@ package digital_bank;
  * */
 public class ContaCorrente extends Conta {
 	
+	/** 
+	 * Imprime o extrato da conta corrente.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	@Override
+	public void imprimirExtrato()
+	{
+		System.out.println("*** Extrato Conta Corrente ***");
+		super.imprimirInformacoesEmComum();
+	}
 }

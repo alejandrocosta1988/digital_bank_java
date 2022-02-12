@@ -95,4 +95,26 @@ public abstract class Conta {
 		contaDeDestino.depositar(valor);
 	}
 	
+	/** 
+	 * Imprime o extrato da conta.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public void imprimirExtrato()
+	{
+		System.out.println("*** Extrato Conta ***");
+	}
+	
+	/** 
+	 * Imprime informações em comum para conta corrente e conta poupança e que são necessárias no extrato da conta.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	protected void imprimirInformacoesEmComum()
+	{
+		System.out.println(String.format("Agência: %d", this.agencia));
+		System.out.println(String.format("Conta: %d", this.numeroDaConta));
+		System.out.println(String.format("Saldo disponível: %.2f", this.saldo));
+	}
+	
 }
