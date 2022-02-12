@@ -8,7 +8,7 @@ package digital_bank;
  */
 public abstract class Conta {
 	
-	private static final  int AGENCIA_PADRAO = 1;
+	private static final int AGENCIA_PADRAO = 1;
 	private static int SEQUENCIAL = 1;
 
 	/** Armazena o número da agência da Conta Corrente.*/
@@ -60,8 +60,39 @@ public abstract class Conta {
 		return this.saldo;
 	}
 	
-	public void sacar(double valor) { }
-	public void depositar(double valor) { }
-	public void transferir(double valor, Conta contaDeDestino) { }
+	/** 
+	 * Realiza um saque do saldo disponível na conta.
+	 * @param valor Valor a ser sacado do saldo disponível em conta.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public void sacar(double valor)
+	{
+		this.saldo -= valor;
+	}
+	
+	/** 
+	 * Realiza um depósito no saldo disponível na conta.
+	 * @param valor Valor a ser depositado no saldo disponível em conta.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public void depositar(double valor)
+	{
+		this.saldo += valor;
+	}
+	
+	/** 
+	 * Realiza uma transferência entre contas.
+	 * @param valor Valor a ser sacado do saldo disponível na conta de origem da movimentação e depositado na conta de destino da movimentação.
+	 * @param contaDeDestino Conta que irá receber o valor transferido como depósito em seu saldo disponível.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public void transferir(double valor, Conta contaDeDestino)
+	{
+		this.sacar(valor);
+		contaDeDestino.depositar(valor);
+	}
 	
 }
