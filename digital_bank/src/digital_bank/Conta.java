@@ -1,11 +1,11 @@
 package digital_bank;
 
 /** 
- * Implementa uma conta no banco.
+ * Implementa uma conta no banco. A classe conta é abstrata porque não é de interesse que ela seja instanciada. Apenas as classes filhas ContaCorrente e ContaPoupanca deverão ser instanciadas.
  * @author Alejandro Costa
  * @version 0.1 2022-02-22
- * */
-public class Conta {
+ */
+public abstract class Conta {
 
 	/** Armazena o número da agência da Conta Corrente.*/
 	private int agencia;
