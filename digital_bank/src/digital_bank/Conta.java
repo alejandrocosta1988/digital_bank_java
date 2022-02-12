@@ -7,6 +7,8 @@ package digital_bank;
  * @version 0.1 2022-02-22
  */
 public abstract class Conta {
+	
+	protected static final  int AGENCIA_PADRAO = 1;
 
 	/** Armazena o número da agência da Conta Corrente.*/
 	protected int agencia;
