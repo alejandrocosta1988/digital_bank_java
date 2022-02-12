@@ -122,6 +122,7 @@ public abstract class Conta {
 	 */
 	protected void imprimirInformacoesEmComum()
 	{
+		System.out.println(String.format("Titular: %s", this.cliente.getNome()));
 		System.out.println(String.format("Agência: %d", this.agencia));
 		System.out.println(String.format("Conta: %d", this.numeroDaConta));
 		System.out.println(String.format("Saldo disponível: %.2f", this.saldo));
