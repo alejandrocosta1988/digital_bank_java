@@ -7,6 +7,16 @@ package digital_bank;
  * */
 public class ContaPoupanca extends Conta {
 
+	ContaPoupanca(Cliente cliente)
+	{
+		super(cliente);
+	}
+	
+	ContaPoupanca(Cliente cliente, double valorDeDepositoInicial)
+	{
+		super(cliente, valorDeDepositoInicial);
+	}
+	
 	/** 
 	 * Imprime o extrato da conta poupança.
 	 * @author Alejandro Costa

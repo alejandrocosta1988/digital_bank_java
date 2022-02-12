@@ -11,26 +11,29 @@ public abstract class Conta {
 	private static final int AGENCIA_PADRAO = 1;
 	private static int SEQUENCIAL = 1;
 
-	/** Armazena o número da agência da Conta Corrente.*/
+	/** Armazena o número da agência da Conta.*/
 	protected int agencia;
-	/** Armazena o número da Conta Corrente.*/
+	/** Armazena o número da Conta.*/
 	protected int numeroDaConta;
-	/** Armazena o saldo da Conta Corrente.*/
+	/** Armazena o saldo da Conta.*/
 	protected double saldo;
+	/** Armazena o cliente titular da Conta.*/
+	private Cliente cliente;
 	
 	
-	public Conta()
+	
+	public Conta(Cliente cliente)
 	{
-
 		this.agencia = AGENCIA_PADRAO;
 		this.numeroDaConta = SEQUENCIAL++;
+		this.cliente = cliente;
 	}
 	
-	public Conta(double valorDeDepositoInicial)
+	public Conta(Cliente cliente, double valorDeDepositoInicial)
 	{
-
 		this.agencia = AGENCIA_PADRAO;
 		this.numeroDaConta = SEQUENCIAL++;
+		this.cliente = cliente;
 		this.saldo = valorDeDepositoInicial;
 	}
 	

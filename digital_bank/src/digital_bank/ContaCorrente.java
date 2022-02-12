@@ -7,14 +7,14 @@ package digital_bank;
  * */
 public class ContaCorrente extends Conta {
 	
-	ContaCorrente()
+	ContaCorrente(Cliente cliente)
 	{
-		super();
+		super(cliente);
 	}
 	
-	ContaCorrente(double valorDeDepositoInicial)
+	ContaCorrente(Cliente cliente, double valorDeDepositoInicial)
 	{
-		super(valorDeDepositoInicial);
+		super(cliente, valorDeDepositoInicial);
 	}
 	
 	/** 
