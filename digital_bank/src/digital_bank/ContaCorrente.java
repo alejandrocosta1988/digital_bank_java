@@ -14,6 +14,39 @@ public class ContaCorrente {
 	/** Armazena o saldo da Conta Corrente.*/
 	private double saldo;
 	
+	/** 
+	 * Retorna o número da agência.
+	 * @return Um int contendo o número da agência da conta corrente.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public int getAgencia()
+	{
+		return this.agencia;
+	}
+	
+	/** 
+	 * Retorna o número da conta corrente.
+	 * @return Um int contendo o número da conta corrente.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public int getNumeroDaConta()
+	{
+		return this.numeroDaConta;
+	}
+	
+	/** 
+	 * Retorna o saldo disponível na conta corrente.
+	 * @return Um double contendo o saldo disponível em conta corrente.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public double getSaldo()
+	{
+		return this.saldo;
+	}
+	
 	public void sacar() { }
 	public void depositar() { }
 	public void transferir() { }
