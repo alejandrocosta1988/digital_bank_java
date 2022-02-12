@@ -13,4 +13,8 @@ public class ContaPoupanca {
 	private int numeroDaConta;
 	/** Armazena o saldo da Conta Poupança.*/
 	private double saldo;
+	
+	public void sacar() { }
+	public void depositar() { }
+	public void transferir() { }
 }
