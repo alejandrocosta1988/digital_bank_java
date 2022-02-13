@@ -16,6 +16,11 @@ public class Banco {
 	/** Armazena as contas criadas no banco.*/
 	List<Conta> contas = new ArrayList<>();
 	
+	public Banco(String nome)
+	{
+		this.nome = nome;
+	}
+	
 	/** 
 	 * Retorna o nome do banco.
 	 * @return Uma String contendo o nome do banco.

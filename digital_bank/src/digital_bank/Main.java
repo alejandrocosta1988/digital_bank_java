@@ -4,6 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		Banco ifbank = new Banco("International Fake Bank - IFBank");
+		
 		Cliente umCliente = new Cliente();
 		umCliente.setNome("Alejandro Costa");
 	
