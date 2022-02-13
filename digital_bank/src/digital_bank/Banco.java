@@ -41,5 +41,15 @@ public class Banco {
 	{
 		this.nome = nome; 
 	}
+	
+	/** 
+	 * Insere uma nova conta na lista de contas criadas no banco.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public void inserirContaNoBanco(Conta novaConta)
+	{
+		this.contas.add(novaConta); 
+	}
 
 }
