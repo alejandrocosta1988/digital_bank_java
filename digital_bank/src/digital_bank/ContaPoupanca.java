@@ -7,9 +7,9 @@ package digital_bank;
  * */
 public class ContaPoupanca extends Conta {
 
-	ContaPoupanca(Cliente cliente)
+	ContaPoupanca(Cliente cliente, Banco banco)
 	{
-		super(cliente);
+		super(cliente, banco);
 	}
 	
 	ContaPoupanca(Cliente cliente, double valorDeDepositoInicial)

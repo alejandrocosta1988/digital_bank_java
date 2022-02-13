@@ -22,11 +22,12 @@ public abstract class Conta {
 	
 	
 	
-	public Conta(Cliente cliente)
+	public Conta(Cliente cliente, Banco banco)
 	{
 		this.agencia = AGENCIA_PADRAO;
 		this.numeroDaConta = SEQUENCIAL++;
 		this.cliente = cliente;
+		banco.inserirContaNoBanco(this);
 	}
 	
 	public Conta(Cliente cliente, double valorDeDepositoInicial)

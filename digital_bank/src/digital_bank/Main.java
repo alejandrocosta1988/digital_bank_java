@@ -9,20 +9,20 @@ public class Main {
 		Cliente umCliente = new Cliente();
 		umCliente.setNome("Alejandro Costa");
 	
-		Conta cc = new ContaCorrente(umCliente);
-	    Conta poupanca = new ContaPoupanca(umCliente);
-	    Conta ccComDeposito = new ContaCorrente(umCliente, 3500);
+		Conta cc = new ContaCorrente(umCliente, ifbank);
+	    Conta poupanca = new ContaPoupanca(umCliente, ifbank);
+	    //Conta ccComDeposito = new ContaCorrente(umCliente, 3500);
         
 	    cc.imprimirExtrato();
 	    poupanca.imprimirExtrato();
 	    
 	    System.out.println();
-	    ccComDeposito.imprimirExtrato();
+	    //ccComDeposito.imprimirExtrato();
 	    
-	    System.out.println("Teste de transferência...");
-	    ccComDeposito.transferir(1200, poupanca);
-	    poupanca.imprimirExtrato();
-	    ccComDeposito.imprimirExtrato();
+	    //System.out.println("Teste de transferência...");
+	    //ccComDeposito.transferir(1200, poupanca);
+	    //poupanca.imprimirExtrato();
+	    //ccComDeposito.imprimirExtrato();
 	    
 	}
 
