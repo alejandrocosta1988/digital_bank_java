@@ -3,7 +3,7 @@ package digital_bank;
 /** 
  * Implementa uma conta do tipo corrente.
  * @author Alejandro Costa
- * @version 0.1 2022-02-22
+ * @version 0.1 2022-02-23
  * */
 public class ContaCorrente extends Conta {
 	
@@ -12,9 +12,9 @@ public class ContaCorrente extends Conta {
 		super(cliente, banco);
 	}
 	
-	ContaCorrente(Cliente cliente, double valorDeDepositoInicial)
+	ContaCorrente(Cliente cliente, double valorDeDepositoInicial, Banco banco)
 	{
-		super(cliente, valorDeDepositoInicial);
+		super(cliente, valorDeDepositoInicial, banco);
 	}
 	
 	/** 

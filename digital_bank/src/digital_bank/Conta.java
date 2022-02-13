@@ -4,7 +4,7 @@ package digital_bank;
  * Implementa uma conta no banco. A classe conta é abstrata porque não é de interesse que ela seja instanciada. Apenas as classes filhas ContaCorrente e ContaPoupanca deverão ser instanciadas.
  * Os atributos agencia, numeroDaConta e saldo possuem visibilidade protected. Dessa forma eles podem ser acessados a partir das classes filhas.
  * @author Alejandro Costa
- * @version 0.1 2022-02-22
+ * @version 0.1 2022-02-23
  */
 public abstract class Conta {
 	
@@ -30,12 +30,13 @@ public abstract class Conta {
 		banco.inserirContaNoBanco(this);
 	}
 	
-	public Conta(Cliente cliente, double valorDeDepositoInicial)
+	public Conta(Cliente cliente, double valorDeDepositoInicial, Banco banco)
 	{
 		this.agencia = AGENCIA_PADRAO;
 		this.numeroDaConta = SEQUENCIAL++;
 		this.cliente = cliente;
 		this.saldo = valorDeDepositoInicial;
+		banco.inserirContaNoBanco(this);
 	}
 	
 	/** 
