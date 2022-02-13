@@ -51,5 +51,15 @@ public class Banco {
 	{
 		this.contas.add(novaConta); 
 	}
+	
+	/** 
+	 * Exibe a lista de contas criadas no banco.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	public void exibirListaDeContas()
+	{
+		System.out.println(contas.toString()); 
+	}
 
 }

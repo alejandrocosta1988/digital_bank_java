@@ -24,6 +24,9 @@ public class Main {
 	    //poupanca.imprimirExtrato();
 	    //ccComDeposito.imprimirExtrato();
 	    
+	    System.out.println("Teste de exibição da lista de contas criadas no banco...");
+	    ifbank.exibirListaDeContas();
+	    
 	}
 
 }
