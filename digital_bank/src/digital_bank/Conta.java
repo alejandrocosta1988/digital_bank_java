@@ -129,4 +129,15 @@ public abstract class Conta {
 		System.out.println(String.format("Saldo disponível: %.2f", this.saldo));
 	}
 	
+	/** 
+	 * Imprime uma representação em String da conta.
+	 * @author Alejandro Costa
+	 * @since 0.1
+	 */
+	@Override
+	public String toString()
+	{
+		return "[Número da conta: " + this.getNumeroDaConta() + ", Nome do cliente: " + this.cliente.getNome() + "]";
+	}
+	
 }
