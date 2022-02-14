@@ -9,6 +9,12 @@ public class Cliente {
 
 	/** Armazena o nome do cliente.*/
 	private String nome;
+	
+	public Cliente() { }
+	public Cliente(String nome)
+	{
+		this.nome = nome;
+	}
 
 	public String getNome() 
 	{
