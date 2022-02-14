@@ -21,6 +21,9 @@ public class BancoTest {
         umBanco.setNome("Banco Teste 01");
         System.out.println(umBanco.getNome());
         System.out.println("OK");
+        
+        System.out.println("Testando o método exibirListaDeContas()...");
+        umBanco.exibirListaDeContas();
 
 	}
 
