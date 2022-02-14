@@ -12,6 +12,15 @@ public class BancoTest {
         System.out.println("Testando o construtor...");
         Banco umBanco = new Banco("Banco Teste 1");
         System.out.println("OK");
+        
+        System.out.println("Testando o método getNome()...");
+        System.out.println(umBanco.getNome());
+        System.out.println("OK");
+        
+        System.out.println("Testando o método setNome()...");
+        umBanco.setNome("Banco Teste 01");
+        System.out.println(umBanco.getNome());
+        System.out.println("OK");
 
 	}
 
