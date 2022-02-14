@@ -1,7 +1,9 @@
 package digital_bank;
 
-/** Define testes unitários para classe ContaCorrente
- * 
+/** Define testes unitários para classe ContaCorrente. Por enquanto, os mesmos testes podem ser extrapolados para ContaPoupanca.
+ * @author Alejandro Costa
+ * @since 0.1
+ * @version 0.1
  */
 public class ContaCorrenteTest {
 
