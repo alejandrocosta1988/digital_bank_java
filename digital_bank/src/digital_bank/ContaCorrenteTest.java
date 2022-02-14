@@ -17,6 +17,10 @@ public class ContaCorrenteTest {
 		System.out.println("Testando o construtor SEM valor de depósito...");
 		Conta contaUm = new ContaCorrente(clienteUm, umBanco);
         System.out.println("OK");
+        
+        System.out.println("Testando o construtor COM valor de depósito...");
+		Conta contaDois = new ContaCorrente(clienteDois, 3345.76, umBanco);
+        System.out.println("OK");
 
 	}
 
