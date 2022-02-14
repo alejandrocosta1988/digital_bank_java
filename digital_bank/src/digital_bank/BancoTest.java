@@ -22,6 +22,12 @@ public class BancoTest {
         System.out.println(umBanco.getNome());
         System.out.println("OK");
         
+        System.out.println("Testando o método inserirContaNoBanco()...");
+        Cliente umCliente = new Cliente();
+        umCliente.setNome("Alejandro Costa");
+        Conta umaContaCorrente = new ContaCorrente(umCliente, umBanco);
+        System.out.println("OK");
+        
         System.out.println("Testando o método exibirListaDeContas()...");
         umBanco.exibirListaDeContas();
 
